@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Chicha Peruana';
+  src: url('fonts/Chicha.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Chicha Peruana', sans-serif;
+}
+
 .top-header {
   position: fixed;
   background-color: #682e94;
@@ -19,12 +35,13 @@
   display: block;
   padding: 15px 20px;
   color: white;
-  text-decorator: none;
+  text-decoration: none;
 }
 
 .Menu-Horizontal li:hover {
   color: white;
 }
+
 .Menu-Vertical {
   padding: 0;
   position: absolute;
@@ -38,7 +55,7 @@
 }
 
 .Menu-Horizontal li a {
-  text-decorator: none;
+  text-decoration: none;
 }
 
 .Menu-Horizontal li:hover .Menu-Vertical {
@@ -59,7 +76,7 @@
   gap: 40 px;
 }
 
-.cont-gral-texto: {
+.cont-gral-texto {
   flex: 1;
 }
 
@@ -120,6 +137,7 @@
   line-height: 1.6;
   margin-right: 10px;
 }
+
 .cont-benef-video {
   width: 250px;
   max-width: 500px;
@@ -166,6 +184,7 @@ select {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
 .lst-checkbox,
 .lst-radio {
   list-style: none;

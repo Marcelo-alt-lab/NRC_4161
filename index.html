@@ -1,252 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Ventas Cosas</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="Pie.css" />
-  </head>
-  <body class="body">
-    <!--MENU HORIZONTAL-->
 
-    <nav class="top-header">
-      <a href="" class="logo">
-        <img heigh="50" width="50" src="Pictures/McDonalds-logo.png" alt="" />
-      </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Ventas Cosas</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="Pie.css" />
+</head>
 
-      <ul class="Menu-Horizontal">
-        <li>
-          Productos
-          <ul class="Menu-Vertical">
-            <li><a href="">Beneficios</a></li>
-            <li><a href="">Ayuda</a></li>
+<body class="body">
+  <script>
+    if (!sessionStorage.getItem('isLoggedIn')) {
+      window.location.href = 'login.html';
+    }
+  </script>
+  <!--MENU HORIZONTAL-->
+
+  <nav class="top-header">
+    <a href="" class="logo">
+      <img heigh="50" width="50" src="Pictures/McDonalds-logo.png" alt="" />
+    </a>
+
+    <ul class="Menu-Horizontal">
+      <li>
+        Productos
+        <ul class="Menu-Vertical">
+          <li><a href="">Beneficios</a></li>
+          <li><a href="">Ayuda</a></li>
+        </ul>
+      </li>
+
+      <li>
+        Ventas
+        <ul class="Menu-Vertical">
+          <li><a href="">Banco Movil</a></li>
+          <li><a href="">Banco internet</a></li>
+          <li><a href="">Yape</a></li>
+          <li><a href="">Cocos y Lucas</a></li>
+        </ul>
+      </li>
+
+      <li>Ayuda</li>
+    </ul>
+  </nav>
+
+  <!--SECCION Productos-->
+
+  <section class="seccion-productos">
+    <div class="cont-gral-productos">
+      <div class="cont-prod-text">
+        <h2>Seccion Productos</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
+          dolorum quos consectetur ab est rem eos laboriosam nihil optio,
+          veritatis aspernatur, doloremque ea? Ipsam nulla rem corrupti ut
+          iste? Sequi facere cumque ipsum vitae laborum, libero cum magnam
+          animi pariatur recusandae ut nulla quam praesentium veniam
+          reiciendis qui nobis? Nesciunt.
+        </p>
+      </div>
+
+      <div class="cont-prod-imagen">
+        <img src="Pictures/1.png" />
+      </div>
+    </div>
+  </section>
+
+  <!--SECCION VIDEO-->
+
+  <section class="seccion-beneficios">
+    <div class="cont-gral-Beneficios">
+      <div class="cont-benef-text">
+        <h2>Seccion Beneficios</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
+          dolorum quos consectetur ab est rem eos laboriosam nihil optio,
+          veritatis aspernatur, doloremque ea? Ipsam nulla rem corrupti ut
+          iste? Sequi facere cumque ipsum vitae laborum, libero cum magnam
+          animi pariatur recusandae ut nulla quam praesentium veniam
+          reiciendis qui nobis? Nesciunt.
+        </p>
+      </div>
+
+      <div class="cont-benef-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YyAuFiIv-V4?si=e55_Zq6xSZhV0d30"
+          title="Gatos haciendo cosas de gatos" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!--Formulario-->
+  <section class="sec-formulario">
+    <div class="div-cont-formulario">
+      <h2>Formulario de Registro</h2>
+      <p>Complete todos los campos correctamente</p>
+      <form class="formulario">
+        <div class="campo">
+          <label for="nombre">Nombres Completos:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" />
+        </div>
+
+        <div class="campo">
+          <label for="nombre">Pais:</label>
+          <select id="pais" name="pais">
+            <option value="">seleccione un pais</option>
+            <option value="Peru">Peru</option>
+            <option value="Ecuador">Ecuador</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Chile">Chile</option>
+          </select>
+        </div>
+
+        <!--CheckBOX-->
+        <div class="campo">
+          <label>Intereses:</label>
+          <ul class="lst-checkbox">
+            <li>
+              <label><input type="checkbox" name="intereses" value="teconologia" />Tecnologia</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="intereses" value="educacion" />Educacion</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="intereses" value="deportes" />Deportes</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="intereses" value="artes" />Artes</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="intereses" value="ciencia" />Ciencia</label>
+            </li>
           </ul>
-        </li>
+        </div>
 
-        <li>
-          Ventas
-          <ul class="Menu-Vertical">
-            <li><a href="">Banco Movil</a></li>
-            <li><a href="">Banco internet</a></li>
-            <li><a href="">Yape</a></li>
-            <li><a href="">Cocos y Lucas</a></li>
+        <!--Radio Button-->
+        <div class="campo">
+          <label>Sexo:</label>
+          <ul class="lst-radio">
+            <li>
+              <label><input type="radio" name="genero" value="masculino" />Masculino</label>
+            </li>
+            <li>
+              <label><input type="radio" name="genero" value="femenino" />Femenino</label>
+            </li>
           </ul>
-        </li>
-
-        <li>Ayuda</li>
-      </ul>
-    </nav>
-
-    <!--SECCION Productos-->
-
-    <section class="seccion-productos">
-      <div class="cont-gral-productos">
-        <div class="cont-prod-text">
-          <h2>Seccion Productos</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
-            dolorum quos consectetur ab est rem eos laboriosam nihil optio,
-            veritatis aspernatur, doloremque ea? Ipsam nulla rem corrupti ut
-            iste? Sequi facere cumque ipsum vitae laborum, libero cum magnam
-            animi pariatur recusandae ut nulla quam praesentium veniam
-            reiciendis qui nobis? Nesciunt.
-          </p>
         </div>
 
-        <div class="cont-prod-imagen">
-          <img src="Pictures/1.png" />
+        <button>Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!--Pie de Pagina-->
+  <section>
+    <footer>
+      <div>
+        <!-- Enlaces legales -->
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <a href="">Política de Privacidad</a>
+          <!-- Dentro de href llama a un documento pdf con la poltica-->
+          <a href="#">Términos y Condiciones</a>
+          <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+          <a href="">Protección de Datos</a>
+          <!--Muestra el PDF-->
+          <a href="Documents/obtenerDocumento.pdf">Normas Legales</a>
         </div>
-      </div>
-    </section>
-
-    <!--SECCION VIDEO-->
-
-    <section class="seccion-beneficios">
-      <div class="cont-gral-Beneficios">
-        <div class="cont-benef-text">
-          <h2>Seccion Beneficios</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
-            dolorum quos consectetur ab est rem eos laboriosam nihil optio,
-            veritatis aspernatur, doloremque ea? Ipsam nulla rem corrupti ut
-            iste? Sequi facere cumque ipsum vitae laborum, libero cum magnam
-            animi pariatur recusandae ut nulla quam praesentium veniam
-            reiciendis qui nobis? Nesciunt.
-          </p>
+        <!-- Redes sociales con íconos personalizados -->
+        <div class="footer-social">
+          <h4>Síguenos</h4>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook"
+              class="social-icon" /></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145812.png" alt="Instagram"
+              class="social-icon" /></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn"
+              class="social-icon" /></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145806.png" alt="Twitter"
+              class="social-icon" /></a>
         </div>
+    </footer>
+  </section>
+</body>
 
-        <div class="cont-benef-video">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/YyAuFiIv-V4?si=e55_Zq6xSZhV0d30"
-            title="Gatos haciendo cosas de gatos"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-            loading="lazy"
-          ></iframe>
-        </div>
-      </div>
-    </section>
-
-    <!--Formulario-->
-    <section class="sec-formulario">
-      <div class="div-cont-formulario">
-        <h2>Formulario de Registro</h2>
-        <p>Complete todos los campos correctamente</p>
-        <form class="formulario">
-          <div class="campo">
-            <label for="nombre">Nombres Completos:</label>
-            <input
-              type="text"
-              id="nombre"
-              name="nombre"
-              placeholder="Ingrese su nombre completo"
-            />
-          </div>
-
-          <div class="campo">
-            <label for="nombre">Pais:</label>
-            <select id="pais" name="pais">
-              <option value="">seleccione un pais</option>
-              <option value="Peru">Peru</option>
-              <option value="Ecuador">Ecuador</option>
-              <option value="Colombia">Colombia</option>
-              <option value="Argentina">Argentina</option>
-              <option value="Chile">Chile</option>
-            </select>
-          </div>
-
-          <!--CheckBOX-->
-          <div class="campo">
-            <label>Intereses:</label>
-            <ul class="lst-checkbox">
-              <li>
-                <label
-                  ><input
-                    type="checkbox"
-                    name="intereses"
-                    value="teconologia"
-                  />Tecnologia</label
-                >
-              </li>
-              <li>
-                <label
-                  ><input
-                    type="checkbox"
-                    name="intereses"
-                    value="educacion"
-                  />Educacion</label
-                >
-              </li>
-              <li>
-                <label
-                  ><input
-                    type="checkbox"
-                    name="intereses"
-                    value="deportes"
-                  />Deportes</label
-                >
-              </li>
-              <li>
-                <label
-                  ><input
-                    type="checkbox"
-                    name="intereses"
-                    value="artes"
-                  />Artes</label
-                >
-              </li>
-              <li>
-                <label
-                  ><input
-                    type="checkbox"
-                    name="intereses"
-                    value="ciencia"
-                  />Ciencia</label
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!--Radio Button-->
-          <div class="campo">
-            <label>Sexo:</label>
-            <ul class="lst-radio">
-              <li>
-                <label
-                  ><input
-                    type="radio"
-                    name="genero"
-                    value="masculino"
-                  />Masculino</label
-                >
-              </li>
-              <li>
-                <label
-                  ><input
-                    type="radio"
-                    name="genero"
-                    value="femenino"
-                  />Femenino</label
-                >
-              </li>
-            </ul>
-          </div>
-
-          <button>Enviar</button>
-        </form>
-      </div>
-    </section>
-
-    <!--Pie de Pagina-->
-    <section>
-      <footer>
-        <div>
-          <!-- Enlaces legales -->
-          <div class="footer-links">
-            <h4>Legal</h4>
-            <a href="">Política de Privacidad</a>
-            <!-- Dentro de href llama a un documento pdf con la poltica-->
-            <a href="#">Términos y Condiciones</a>
-            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
-            <a href="">Protección de Datos</a>
-            <!--Muestra el PDF-->
-            <a href="Documents/obtenerDocumento.pdf">Normas Legales</a>
-          </div>
-          <!-- Redes sociales con íconos personalizados -->
-          <div class="footer-social">
-            <h4>Síguenos</h4>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
-                alt="Facebook"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
-                alt="Instagram"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
-                alt="LinkedIn"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
-                alt="Twitter"
-                class="social-icon"
-            /></a>
-          </div>
-      </footer>
-    </section>
-  </body>
 </html>
