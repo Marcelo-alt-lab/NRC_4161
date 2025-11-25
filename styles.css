@@ -246,4 +246,12 @@ button {
     top: 5rem; /* Debajo del menú fijo */
     left: 0;
   }
+
+  .Menu-Horizontal.active {
+    display: flex; /* Mostrar menú al activar la clase */
+  }
+
+  .Menu-Horizontal li {
+    border-bottom: 1px solid #ccc; /* Líneas separadoras */
+  }
 }
