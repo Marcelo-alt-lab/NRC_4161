@@ -1,6 +1,8 @@
 /* Footer general */
 .footer {
-  background-color: #222; /* Fondo oscuro para contraste */
+  display: flex;
+  background-color: #222;
+  /* Fondo oscuro para contraste */
   color: white;
   padding: 2rem 1rem;
   font-family: "Roboto", sans-serif;
