@@ -40,12 +40,18 @@ body h2 {
 
 /* BOTÓN HAMBURGUESA (ESCONDE EN DESKTOP) */
 .menu-toggle {
-  display: none; /* Oculto por defecto */
-  font-size: 2rem; /* Tamaño del ícono hamburguesa */
-  background: none; /* Sin fondo */
-  border: none; /* Sin bordes */
-  cursor: pointer; /* Manito al pasar el mouse */
-  margin-right: 1rem; /* Espacio entre el borde derecho */
+  display: none;
+  /* Oculto por defecto */
+  font-size: 2rem;
+  /* Tamaño del ícono hamburguesa */
+  background: none;
+  /* Sin fondo */
+  border: none;
+  /* Sin bordes */
+  cursor: pointer;
+  /* Manito al pasar el mouse */
+  margin-right: 1rem;
+  /* Espacio entre el borde derecho */
 }
 
 .Menu-Horizontal {
@@ -233,25 +239,43 @@ button {
 
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block; /* Mostrar botón hamburguesa en móviles */
+    display: block;
+    /* Mostrar botón hamburguesa en móviles */
     color: black;
   }
 
   .Menu-Horizontal {
-    display: none; /* Ocultar menú horizontal por defecto */
-    flex-direction: column; /* Mostrarlo en vertical al activarse */
+    display: none;
+    /* Ocultar menú horizontal por defecto */
+    flex-direction: column;
+    /* Mostrarlo en vertical al activarse */
     width: 100%;
     background-color: white;
     position: absolute;
-    top: 5rem; /* Debajo del menú fijo */
+    top: 5rem;
+    /* Debajo del menú fijo */
     left: 0;
   }
 
+  .Menu-Horizontal li {
+    color: black;
+  }
+
+  .Menu-Horizontal li:hover {
+    color: Darkgray;
+  }
+
+  .Menu-Horizontal li a {
+    color: black;
+  }
+
   .Menu-Horizontal.active {
-    display: flex; /* Mostrar menú al activar la clase */
+    display: flex;
+    /* Mostrar menú al activar la clase */
   }
 
   .Menu-Horizontal li {
-    border-bottom: 1px solid #ccc; /* Líneas separadoras */
+    border-bottom: 1px solid #ccc;
+    /* Líneas separadoras */
   }
 }
