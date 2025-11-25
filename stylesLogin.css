@@ -93,8 +93,8 @@ button {
 
 @media (max-width: 48rem) {
     .container{
-        max-width: 80%;
-        margin-left: 10%;
-        margin-right:10%;
+        max-width: 40rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
     }
 }
