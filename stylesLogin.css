@@ -93,8 +93,9 @@ button {
 
 @media (max-width: 48rem) {
     .form-container {
-    max-width: 90%; 
+    max-width: 80%; 
     padding: 15px;
+    margin-left: -10%;
     border-radius: 20px;
   }
 
