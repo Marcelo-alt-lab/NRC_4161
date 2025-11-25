@@ -23,6 +23,17 @@
       <img heigh="50" width="50" src="Pictures/McDonalds-logo.png" alt="" />
     </a>
 
+    <!-- BOTÓN HAMBURGUESA -->
+
+   <button class="menu-toggle" aria-label="Abrir menú">
+
+    &#9776;
+
+    <!-- Ícono de hamburguesa -->
+
+   </button>
+
+
     <ul class="Menu-Horizontal">
       <li>
         Productos
@@ -190,6 +201,24 @@
       </div>
     </footer>
   </section>
+
+  <script>
+          // Selecciona el botón de hamburguesa
+      const btn = document.querySelector(".menu-toggle");
+
+      // Selecciona el menú horizontal
+      const menu = document.querySelector(".Menu-Horizontal");
+
+      // Al hacer clic en el botón de hamburguesa
+      btn.addEventListener("click", () => {
+        // Alterna (agrega o quita) la clase "active" en el menú
+        // Esto hace que se muestre o se oculte
+        menu.classList.toggle("active");
+
+        // (opcional) También puedes alternar una clase en el botón si quieres cambiar su apariencia
+        //btn.classList.toggle("open");
+      });
+  </script>
 </body>
 
 </html>
