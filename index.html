@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="Pie.css" />
 </head>
 
-<body class="body">
+<body>
   <script>
     if (!sessionStorage.getItem('isLoggedIn')) {
       window.location.href = 'login.html';
@@ -162,8 +162,8 @@
 
   <!--Pie de Pagina-->
   <section>
-    <footer>
-      <div>
+    <footer class="footer">
+      <div class="footer-container">
         <!-- Enlaces legales -->
         <div class="footer-links">
           <h4>Legal</h4>
@@ -187,6 +187,7 @@
           <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145806.png" alt="Twitter"
               class="social-icon" /></a>
         </div>
+      </div>
     </footer>
   </section>
 </body>
