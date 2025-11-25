@@ -83,13 +83,6 @@
   }
 
   .footer-container {
-    .footer {
-    display: flex;
-    margin-right: 0rem;
-    width: 100%;
-  }
-
-  .footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,12 +93,4 @@
   .footer-social img {
     margin-bottom: 0.5rem;
   }
-  }
-
-  .footer-social img {
-    margin-bottom: 0.5rem;
-  }
 }
-
-
-
